@@ -1,0 +1,42 @@
+Comandos para Inicar o Node
+//Iniciar o gerenciamento de pacotes do Node. Começar o projeto na pasta indicada no terminal, criando um arquivo Json
+1: npm init -y 
+
+//Instalar biblioteca express. Essa biblioteca permite fazer um projeto, meio que simulando um servidor.
+2: npm install express
+
+//Precisamos agora criar um arquivo server, o server.js, nesse arquivo ficará as configurações que o servidor precisa resolver.
+3: server.js
+
+//Importante: para cada alteração realizado no arquivo server.js, é necessário reiniciar o servidor.
+
+//Para não precisar reiniciar toda vez o servidor após uma alteração, basta instalar o nodemon, em um local específico para desenvolver
+4: npm install nodemon -D
+
+//No arquivo package.json, alterar o código abaixo
+"scripts": {
+    "dev": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+Para:
+
+"scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  
+//Para tornar sua máquina o servidor, abrir o gitbash, vai até a pasta do projeto e digite:
+node src/server.js
+
+//Instalar o templates engine NunJucks
+npm install nunjucks
+
+//Para cada template instalado, é preciso configurar o servidor para começar a utiliza-lo.
+
+//Instalar o banco de dados SQLITE-ASYNC
+npm install sqlite-async
+
+//npm run dev
+
+//Verbos HTTP
+-GET
+-POST
